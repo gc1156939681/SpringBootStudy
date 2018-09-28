@@ -7,23 +7,29 @@ import lombok.Data;
  */
 @Data
 public class Card {
+    private String author;
     private String avatar;
-    private String name;
-    private String time;
-    private String title;
-    private String content;
     private String picture;
+    private String title;
+    private String introduce;
     private Integer like;
-    private Integer comment;
+    private Integer amount;
 
-    public Card(String avatar, String name, String time, String title, String content, String picture, Integer like, Integer comment) {
+    public Card(String author, String avatar, String picture, String title, String introduce) {
+        this.author = author;
         this.avatar = avatar;
-        this.name = name;
-        this.time = time;
-        this.title = title;
-        this.content = content;
         this.picture = picture;
+        this.title = title;
+        this.introduce = introduce;
+    }
+
+    public Card(String author, String avatar, String picture, String title, String introduce, Integer like, Integer amount) {
+        this.author = author;
+        this.avatar = avatar;
+        this.picture = picture;
+        this.title = title;
+        this.introduce = introduce;
         this.like = like;
-        this.comment = comment;
+        this.amount = amount;
     }
 }

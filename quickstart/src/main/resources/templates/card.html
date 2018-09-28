@@ -1,0 +1,288 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>少数派</title>
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
+    <link rel="stylesheet" href="/webjars/bootstrap/3.3.7-1/css/bootstrap.min.css"/>
+    <style>
+        .top {
+            background: #2F2525;
+            height: 60px;
+        }
+
+        .logo {
+
+        }
+
+        .change {
+            margin-top: -20px;
+            border-bottom: 1px solid lightgray;
+            padding-left: 172px;
+            padding-right: 172px;
+            font-weight: bold;
+        }
+
+        .pic {
+            width: 160px;
+            heigt: 210px;
+            float: right;
+            padding-right: 10px;
+        }
+
+        .button-set {
+            font-weight: bold;
+        }
+
+        .avatar-set {
+            border-radius: 100%;
+            height: 42px;
+            width: 42px;
+            float: left;
+            margin-top: 4px;
+            margin-left: 4px;
+            /*padding-left: 10px;*/
+        }
+
+        .author {
+            padding-top: 8px;
+            font-size: 12px;
+            padding-left: 70px;
+        }
+
+        .time {
+            padding-left: 70px;
+            margin-top: -8px;
+            font-size: 12px;
+            color:gray;
+        }
+
+        .center {
+            margin-top: 30px;
+        }
+
+        .title {
+            font-size: 22px;
+            font-weight: bold;
+
+        }
+
+        .introduce {
+            font-size: 16px;
+        }
+
+        .amount {
+            float:left;
+            padding-top: 8px;
+            margin-left: 80px;
+        }
+        .recommend{
+            padding-left: 40px;
+        }
+        .main-pic{
+            width: 1120px;
+            height: 400px;
+            margin-top:36px;
+        }
+        .last{
+            display: flex;
+            margin-top: 22px;
+            font-weight: bold;
+            margin-left: 190px;
+            padding-bottom: 10px;
+        }
+        .right-introduce{
+            color: gray;
+
+        }
+        .gz{
+            font-size: 12px;
+            color: gray;
+            margin-top: 10px;
+        }
+        .inspect-line{
+            display: flex;
+        }
+        .inspect-btn{
+            margin-left: 120px;
+            border: 1px solid black;
+            border-radius: 10%;
+        }
+        .like{
+            margin-left: -70px;
+            margin-top: 8px;
+            padding-bottom: 14px;
+
+        }
+        .like-amount{
+            display: flex;
+            color: gray;
+            margin-left: 640px;
+        }
+        .amount-text{
+            margin-left: 20px;
+        }
+        .like-text {
+            margin-left: 14px;
+            /*margin-top:18px;*/
+        }
+        .comment-set{
+            margin-top:6px;
+            margin-left: -20px;
+        }
+        .comment-value{
+            margin-left:14px;
+        }
+        .point{
+            color: gray;
+            font-size: 26px;
+        }
+        .top-title{
+            color: white;
+            font-size: 26px;
+        }
+        .top-title-set{
+            margin-left: 500px;
+            margin-top: 10px;
+        }
+        .recommend-text{
+            margin-left: 704px;
+        }
+        .nav-right{
+            margin-left: 960px;
+            margin-top:-26px;
+        }
+        .search-set{
+            margin-left: 26px;
+        }
+        .user-avatar{
+            border-radius: 100%;
+            height: 30px;
+            width: 30px;
+            margin-left: 18px;
+            margin-top: -2px;
+        }
+
+    </style>
+</head>
+<body>
+<!--顶部导航栏-->
+<nav class="navbar navbar-light top">
+    <div class="container">
+        <div class="navbar-left">
+            <img src="img/logo.png" class="logo">
+        </div>
+        <div class="top-title-set">
+            <text class="point" > # </text>
+            <text class="top-title">  Matrix </text>
+        </div>
+        <div class="nav-right">
+            <img src="img/pen.png">
+            <img src="img/search1.png" class="search-set">
+            <img src="img/ring.png" class="search-set">
+            <img th:src="@{'img/'+${user.avatar}}" class="user-avatar">
+        </div>
+    </div>
+</nav>
+<!--顶部按钮组-->
+<div class="change">
+    <div class="btn-group btn-group-justified " role="group" >
+        <div class="btn-group " role="group">
+            <button type="button" class="btn btn-default">
+                正版软件
+            </button>
+        </div>
+        <div class="btn-group " role="group">
+            <button type="button" class="btn btn-default">
+                付费栏目
+            </button>
+        </div>
+        <div class="btn-group " role="group">
+            <button type="button" class="btn btn-default">Matrix</button>
+        </div>
+        <div class="btn-group " role="group">
+            <button type="button" class="btn btn-default">专题广场</button>
+        </div>
+        <div class="btn-group " role="group">
+            <button type="button" class="btn btn-default">热门文章</button>
+        </div>
+        <div class="btn-group " role="group">
+            <button type="button" class="btn btn-default">应用推荐</button>
+        </div>
+        <div class="btn-group " role="group">
+            <button type="button" class="btn btn-default">生活方式</button>
+        </div>
+        <div class="btn-group " role="group">
+            <button type="button" class="btn btn-default">新玩意</button>
+        </div>
+    </div>
+</div>
+<!--中间大图-->
+<div class="container">
+    <img src="img/center.jpg" class="main-pic">
+</div>
+
+<div class="container last">
+    <p>精选专栏文章</p>
+    <div class="recommend-text"><text>推荐专栏</text></div>
+</div>
+<!--左侧主体内容-->
+<div class="container ">
+    <div class="col-md-8" col-lg-12>
+        <div class="thumbnail" th:each="card:${cardList}">
+            <div>
+                <img th:src="@{'img/'+${card.avatar }}" class="avatar-set">
+                <p th:text="${card.author}" class="author"></p>
+                <p class="time">两天前</p>
+            </div>
+
+            <div class="row center">
+                <div class="col-xs-12 col-md-9">
+                    <p th:text="${card.title}" class="title"></p>
+                    <p th:text="${card.introduce}" class="introduce"></p>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <img class="pic" th:src="@{'img/'+${card.picture}}">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 col-md-4"></div>
+                <div class="col-xs-6 col-md-4"></div>
+                <div class="col-xs-6 col-md-4 like-amount ">
+                    <div><img src="img/like1.png" class="like">
+                        <text th:text="${card.like}" class="like-text"> ></text>
+                    </div>
+                    <div class="comment-set">
+                        <img src="img/comment1.png" >
+                        <text th:text="${card.amount}" class="comment-value" ></text>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--右侧主体内容-->
+    <div class="col-md-4 recommend">
+        <div class="row">
+            <div class="col-sm-6 col-md-12">
+                <div class="thumbnail" th:each="recommend:${recommendList}">
+                    <img th:src="@{'img/'+${recommend.pic}}" >
+                    <div class="caption">
+                        <h3 th:text="${recommend.title}"></h3>
+                        <p th:text="${recommend.introduce}" class="right-introduce"></p>
+
+                        <div class="inspect-line">
+                            <p th:text="${recommend.amount}+人关注" class="gz"></p>
+                            <button type="button" class="btn btn-default inspect-btn">查看专栏</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
