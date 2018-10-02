@@ -25,12 +25,12 @@ public class UserRepositoryTest {
     public void initData(){
         //创建六条数据
         SysUser[] users = {
-                new SysUser("ggg@qq.com","111","哈哈哈",45),
-                new SysUser("hhh@qq.com","222","简书",85),
-                new SysUser("iii@qq.com","333","土鼠",75),
-                new SysUser("jjj@qq.com","444","星帽",280),
-                new SysUser("kkk@qq.com","555","小贝",289),
-                new SysUser("lll@qq.com","666","路边看雪的小女孩",1056),
+                new SysUser("1156939681@qq.com","123456","且听风吟",100),
+                new SysUser("1758042694","666666","花花家的小公举",145),
+                new SysUser("1120845268@qq.com","888888","一粒的算命先生",75),
+                new SysUser("981006610@qq.com","111111","啊云飘呀飘呀飘",280),
+                new SysUser("2440196667@qq.com","123456","林深时见鹿",289),
+                new SysUser("huangjihai0023@163.com","666666","骄阳似我",1056),
         };
         for (int i = 0 ; i < 6 ; i++ ){
             userRepository.save(users[i]);
