@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="springboot_test@localhost" uuid="62298354-b67d-4b83-9fdb-4479008e7910">
+    <data-source source="LOCAL" name="springboot_test@localhost" uuid="16c97fe6-8027-4d36-8f8b-425ef564ff0d">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>

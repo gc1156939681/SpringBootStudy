@@ -9,8 +9,10 @@ import java.util.List;
  */
 
 public interface AlbumService {
-    Album save(Album album);
-    List<Album> getAll();
+    List<Album> findHotAlbums();
+
     Album get(int id);
-    void delete(int id);
+
+    List<Album> getAll();
+
 }

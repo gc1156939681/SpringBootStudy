@@ -18,9 +18,13 @@ public class AlbumServiceImpl implements AlbumService {
     private AlbumRepository albumRepository;
 
     @Override
-    @Transactional
-    public Album save(Album album) {
-        return albumRepository.save(album);
+    public List<Album> findHotAlbums() {
+        return albumRepository.findHotAlbums();
+    }
+
+    @Override
+    public Album get(int id) {
+        return albumRepository.findById(id).get();
     }
 
     @Override
@@ -28,14 +32,4 @@ public class AlbumServiceImpl implements AlbumService {
         return albumRepository.findAll();
     }
 
-    @Override
-    @Transactional
-    public Album get(int id) {
-        return albumRepository.findById(id).get();
-    }
-
-    @Override
-    public void delete(int id) {
-        albumRepository.deleteById(id);
-    }
 }

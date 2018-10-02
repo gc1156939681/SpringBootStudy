@@ -1,4 +1,4 @@
-package com.example.spring_data_jpa.entity;
+package com.example.album.entity;
 
 import lombok.Data;
 
@@ -7,26 +7,30 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by guocui on 2018/9/29.
- * @Entity 把类跟表映射
- * @Table()可以指定生成表的名称
+ * @author guocui
+ * time is
  */
-
 @Entity
 @Data
 public class Album {
-    @Id
     @GeneratedValue
-
+    @Id
     private Integer id;
     private String albumCover;
     private String albumTitle;
-    private String albumDescription;
+    private String  albumDescription;
     private Integer likes;
 
-    @OneToMany(fetch = FetchType.EAGER,cascade = {CascadeType.ALL})
+
+    @OneToMany(fetch = FetchType.EAGER,cascade = CascadeType.REMOVE)
     @JoinColumn(name = "picture_id")
+
     private List<PictureList> pictureList = new ArrayList<>();
+
+
+    public Album() {
+    }
+
     public Album(String albumCover, String albumTitle, String albumDescription, Integer likes) {
         this.albumCover = albumCover;
         this.albumTitle = albumTitle;
