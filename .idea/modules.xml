@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/quickstart/quickstart.iml" filepath="$PROJECT_DIR$/quickstart/quickstart.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-data-jpa/spring-data-jpa.iml" filepath="$PROJECT_DIR$/spring-data-jpa/spring-data-jpa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/timedtask/timedtask.iml" filepath="$PROJECT_DIR$/timedtask/timedtask.iml" />
     </modules>
   </component>
 </project>

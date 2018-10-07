@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="quickstart" />
         <module name="spring-data-jpa" />
+        <module name="timedtask" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -15,6 +16,7 @@
       <module name="quickstart" target="1.8" />
       <module name="spring-data-jpa" target="1.8" />
       <module name="springdatajpa" target="1.8" />
+      <module name="timedtask" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

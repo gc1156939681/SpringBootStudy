@@ -43,6 +43,7 @@
       <list>
         <option value="$PROJECT_DIR$/quickstart/pom.xml" />
         <option value="$PROJECT_DIR$/spring-data-jpa/pom.xml" />
+        <option value="$PROJECT_DIR$/timedtask/pom.xml" />
       </list>
     </option>
   </component>
