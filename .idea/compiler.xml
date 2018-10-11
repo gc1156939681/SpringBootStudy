@@ -6,16 +6,22 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="quartz" />
         <module name="quickstart" />
+        <module name="spring-boot-websocket" />
         <module name="spring-data-jpa" />
+        <module name="test" />
         <module name="timedtask" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="album" target="1.8" />
+      <module name="quartz" target="1.8" />
       <module name="quickstart" target="1.8" />
+      <module name="spring-boot-websocket" target="1.8" />
       <module name="spring-data-jpa" target="1.8" />
       <module name="springdatajpa" target="1.8" />
+      <module name="test" target="1.8" />
       <module name="timedtask" target="1.8" />
     </bytecodeTargetLevel>
   </component>
