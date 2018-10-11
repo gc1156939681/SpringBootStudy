@@ -32,6 +32,7 @@ public class SportUser {
     private List<Step> steps = new ArrayList<>();
 
 
+    
 
     public SportUser(String account, String password, String avatar, String nickName, List<Step> steps) {
         this.account = account;
